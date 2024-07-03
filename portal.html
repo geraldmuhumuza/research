@@ -7,8 +7,8 @@
         <div class="side-bar">
             <div class="logo">
                 <div class="logo1">
-                    <i class="bx bx-menu"></i>
-                    <span>RESEARCH PORTAL</span>
+                    <i class="bx bx-menu" id="btn"></i>
+                    <span class="name">RESEARCH PORTAL</span>
                 </div>
             </div>
             <div class="user">
@@ -67,10 +67,18 @@
                         </a>
                         <span>Logout</span>
                     </div>
+                
                 </ul>
             </div>
         </div>
     </body>
+    <script>
+        let btn = document.querySelector('#btn');
+        let sidebar = document.querySelector('.side-bar');
+        btn.onclick = function(){
+            sidebar.classList.toggle('active')
+        };
+    </script>
     <style>
         *{
             padding-left: 0vh;
@@ -97,6 +105,54 @@
             height: 50px;
             width: 100%;
             align-items: center;
+        }
+        .logo .logo1 i{
+            font-size: 28px;
+            margin-right: 5px;
+        }
+        .logo .logo1 .name{
+            font-size: 20px;
+            font-weight: 200;
+        }
+        .side-bar #btn{
+            position: absolute;
+            color: #fff;
+            left: 90%;
+            top: 6px;
+            font-size: 20px;
+            height: 50px;
+            width: 50px;
+            text-align: center;
+            line-height: 50px;
+            transform: translateX(-50%);
+        }
+        .side-bar ul{
+            margin-top: 20px;
+            position: relative;
+            height: 50px;
+            width: 100%;
+            margin: 0 5px;
+            list-style: none;
+            line-height: 50px;
+        }
+        .side-bar ul a{
+            color: #fff;
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            transition: all 0.4s ease;
+            border-radius: 12px;
+        }
+        .side-bar ul a:hover{
+            color: #11101d;
+            background: #fff;
+        }
+        .side-bar ul a i{
+            height: 50px;
+            min-width: 50px;
+            border-radius: 12px;
+            line-height: 50px;
+            text-align: center;
         }
         .img-user{
             width: 10vh;
