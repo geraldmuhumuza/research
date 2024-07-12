@@ -1,0 +1,68 @@
+/* Style your sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #7416c0;
+    color: #fff;
+}
+
+.logo .img-logo{
+   	width:40px;
+	height:40px;
+	border-radius:100px;
+	padding:5px;
+	margin:4px;
+}
+.logo .img-logo:hover{
+	opacity:50%;
+}
+.logo span:hover{
+	
+	opacity:70%;	
+}
+.logo i{
+	color:white;
+	margin-left:50px;
+	font-size:35px;
+}
+
+.menu {
+    padding: 10px;
+}
+
+.menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px;
+	border-radius:3px;
+}
+
+.menu a:hover {
+    background-color: #555;
+}
+.copyright{
+	font-size:13px;
+	position:relative;
+	padding:10px;
+	font-style:oblique;
+	font-weight:bold;
+}
+.subscribe{
+	padding:4px;
+	margin-top:5px;
+}
+.subscribe input{
+	width:200px;
+	height:20px;
+	color:white;
+	margin-top:5px;
+	border:black;
+	border-radius:2px;
+	background-color:#7416c0;
+
+}
+/* Style your main content area */
+.content {
+    margin-left: 250px; /* Adjust based on sidebar width */
+    padding: 20px;
+}
