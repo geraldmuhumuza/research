@@ -10,11 +10,11 @@
 <body>
     <div class="sidebar" id="Sidebar">
 	
-        <div class="logo">
+        <div class="logo" >
 		
-		<img src="cc.jpg" class="img-logo">
+		<img src="cc.jpg" class="img-logo" onmouseover="openNav()" transition="0.3s">
 		<span>Username</span>
-	<i class="bx bx-menu" onclick="closeNav()"></i>
+		<i class="bx bx-x" onmouseover="closeNav()"></i>		
 	</div>
 	
         <div class="menu">
@@ -70,7 +70,8 @@
         </div>
     </div>
     <div class="content">
-          </div>
-    <script src="script.js"></script>
+	<i class="bx bx-menu" onclick="openNav()"></i>
+    </div>
+    <script src="dash.js"></script>
 </body>
 </html>
